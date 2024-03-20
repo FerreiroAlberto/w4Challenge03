@@ -1,27 +1,16 @@
-# Anguchallenge
+# Week 4 - Challenge 3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+## GoT DOM - Angular - Typescript
 
-## Development server
+Crea un proyecto nuevo en Angular - TypeScrypt
+Reproduce el challenge Week 3 - Challenge 1
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Utiliza básicamente el mismo modelo de datos
+  a - La misma estructura de clases -> generamos los datos
+  b - Convierte las clases a un único interfaz y crea un fichero que lo devuelva asíncronamente
+  (Puedes usar los datos del fichero data.ts)
 
-## Code scaffolding
+- Utiliza la maqueta original (HTML/CSS) o los componentes que creaste
+  para realizar los componentes de Angular necesarios para que funcione la aplicación
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Testa todos los elementos de la aplicación
