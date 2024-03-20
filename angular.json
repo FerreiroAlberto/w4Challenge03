@@ -3,5 +3,108 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "GoT2": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/go-t2",
+      "sourceRoot": "projects/go-t2/src",
+      "prefix": "isdi",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/go-t2",
+            "index": "projects/go-t2/src/index.html",
+            "browser": "projects/go-t2/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/go-t2/tsconfig.app.json",
+            "assets": [
+              "projects/go-t2/src/favicon.ico",
+              "projects/go-t2/src/assets"
+            ],
+            "styles": [
+              "projects/go-t2/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "GoT2:build:production"
+            },
+            "development": {
+              "buildTarget": "GoT2:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "GoT2:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/go-t2/tsconfig.spec.json",
+            "assets": [
+              "projects/go-t2/src/favicon.ico",
+              "projects/go-t2/src/assets"
+            ],
+            "styles": [
+              "projects/go-t2/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/go-t2/**/*.ts",
+              "projects/go-t2/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "c60f623b-0c79-4c71-8b66-43e47ff3b0d3",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
