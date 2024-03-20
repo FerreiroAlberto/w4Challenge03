@@ -1,9 +1,3 @@
-body {
-  background-color: #b9540c;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-}
 .character {
   width: 20%;
   flex-basis: auto;

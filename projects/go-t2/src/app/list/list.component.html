@@ -1,0 +1,14 @@
+<body>
+  <div class="app container">
+    <ul class="characters-list row list-unstyled">
+      @for (char of characters; track $index){
+      <isdi-card
+        [char]="char"
+        (deleteEvent)="onDelete($event)"
+        (talkEvent)="onTalk($event)"
+      />
+      }
+    </ul>
+    <p>{{ this.message }}</p>
+  </div>
+</body>
