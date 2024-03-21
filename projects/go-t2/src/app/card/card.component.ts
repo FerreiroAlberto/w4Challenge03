@@ -38,7 +38,7 @@ import { JsonPipe } from "@angular/common";
             <li>Sirve a: {{ char.servesTo?.name }}</li>
           </ul>
           <div class="character__actions">
-            <button class="character__action btn">habla</button>
+            <button class="character__action btn" (click)="sendTalk()">habla</button>
             <button class="character__action btn" (click)="sendDelete()">
               muere
             </button>

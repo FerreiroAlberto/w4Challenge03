@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "projects/go-t2/dist/out-tsc",
+    "outDir": "projects/go-t2/dist copy/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
